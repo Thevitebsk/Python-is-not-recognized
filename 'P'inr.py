@@ -1,10 +1,11 @@
 print("'Python' is not recognized")
-pl=int(input("Amout of lines:"));c=[];n=1;mc=""
-for ic in range(pl):c.append(input(f"{n}:"));n+=1
+pl=int(input("Amout of lines:"));c=[];mc="";cp=0;print(pl);sv=[]
+for ic in range(pl):c.append(input())
 mc=c[0];p=0
 while len(c)>0:
  while len(mc)>p:
-  if mc[p]=="t" and len(c)>1:print(c[p+1]);p+=1
+  if mc[p]=="t":print(c[int(mc[p+1])]);p+=1
   elif mc[p]==";":break
+  elif mc[p]=="g":mc=c[p];p=-1
   p+=1
- c.pop(0)
+ sv.append(c.pop(0))
