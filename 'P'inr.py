@@ -8,5 +8,5 @@ while len(c)>p:
   else:
    while c[p]!="]":p+=1
  elif c[p]=="@":s.append(input())
- elif c[p]=="|":print(c[p+1],end="");p+=2
+ elif c[p]=="|":print(c[p+1],end="");p+=1
  p+=1
