@@ -14,7 +14,7 @@ while len(c)>p:
  if c[p]=="j":
   trla=c[p+1]
   while 1:
-   if len(c)==p:p=0
+   if len(c)-1==p:p=0
    if c[p-1]==trla and c[p]==":":break
    p+=1
  p+=1
