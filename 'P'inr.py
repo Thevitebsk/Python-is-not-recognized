@@ -12,7 +12,7 @@ while len(c)>p:
  if c[p]=="j":
   trla=str(c[p+1]);p+=2
   while 1:
-   if len(c) is p:p=0
+   if len(c)==p:p=0
    elif c[p]==trla and c[p-1]==":":break
    p+=1
  p+=1
