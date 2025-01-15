@@ -15,4 +15,6 @@ while len(c)>p:
    if len(c)==p:p=0
    elif c[p]==trla and c[p-1]==":":break
    p+=1
+ if c[p]=="\"":
+  while c[p]!="\"":p+=1
  p+=1
