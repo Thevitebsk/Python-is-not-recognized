@@ -4,7 +4,7 @@ while len(c)>p:
  if c[p]==";":break
  elif c[p]==":":s.append(c[p+1]);p+=1
  elif c[p]=="?"and c[p+1]=="[":
-  if s[0]==s[1]:...
+  if s[-1]==s[-2]:...
   else:
    while c[p]!="]":p+=1
  elif c[p]=="@":s.append(input())
