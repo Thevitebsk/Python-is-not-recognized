@@ -13,6 +13,7 @@ while len(c)>p:
    if len(c)==p:p=0
    elif c[p]==trla and c[p-1]==":":break
    p+=1
- elif c[p]=="\"":p=c.index("\"",p)
- elif c[p]=="[":p=c.index("]",p)
+ elif c[p]=="[":
+  try:p=c.index("]",p)
+  except ValueError:print(f"{p+1}:No closing bracket found");break
  p+=1
