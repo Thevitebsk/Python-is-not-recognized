@@ -5,6 +5,7 @@ while len(c)>p:
  elif c[p]==":":s.append(c[p+1]);p+=1
  elif c[p]=="?"and c[p+1]=="[":
   if s[-1]!=s[-2]:p=c.index("]",p)
+  else:p+=1
  elif c[p]=="@":s.append(input())
  elif c[p]=="|":print(c[p+1],end="");p+=1
  elif c[p]=="j":
@@ -15,5 +16,5 @@ while len(c)>p:
    p+=1
  elif c[p]=="[":
   try:p=c.index("]",p)
-  except ValueError:print(f"{p+1}:No closing bracket found");break
+  except ValueError:print(f"{p+1}:line needs a closing square bracket");break
  p+=1
